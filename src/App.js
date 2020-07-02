@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0);
+function App(props) {
+  const [count, setCount] = useState(props.count ? props.count : 0);
 
   const handleClick = () =>  {
     return setCount(count +1);
