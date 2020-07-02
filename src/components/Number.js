@@ -1,4 +1,5 @@
 import React from "react";
+import Line from "./Line";
 
 class Number extends React.Component {
 
@@ -14,12 +15,15 @@ class Number extends React.Component {
     };
 
     render() {
+        const count = this.state.count;
         return (
         <div>
             <button onClick={this.handleClick}>
                 Hello world!
             </button>
-            &nbsp;number: {this.state.count}
+            &nbsp;number: {count}
+            {Array(count).fill(0).map((value,index) => (<Line key={index} />))
+       }
         </div>)
     }
 }
