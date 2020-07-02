@@ -6,7 +6,7 @@ function App(props) {
   const [count, setCount] = useState(props.count ? props.count : 0);
 
   const handleClick = () =>  {
-    return setCount(count +1);
+    return setCount(props.step(count));
   };
 
   return (
