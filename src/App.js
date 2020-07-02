@@ -18,7 +18,12 @@ function App() {
         >
           Learn React
         </a>
-          <div><button>Hello world!</button> number: 0</div>
+          <div>
+            <button onClick={() => alert("now you know how to handle onclick event")}>
+              Hello world!
+            </button>
+            &nbsp;number: 0
+          </div>
       </header>
     </div>
   );
