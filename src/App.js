@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Number from "./components/Number";
+import Counter from "./components/Counter";
 
 class App extends React.Component {
 
@@ -21,7 +21,7 @@ class App extends React.Component {
                     >
                         Learn React
                     </a>
-                    <Number {...this.props}></Number>
+                    <Counter/>
                 </header>
             </div>
         );

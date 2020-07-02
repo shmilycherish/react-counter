@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App step={(count) => count + 2}/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
