@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Number from "./components/Number";
 
 function App(props) {
-  const [count, setCount] = useState(props.count ? props.count : 0);
-
-  const handleClick = () =>  {
-    return setCount(props.step(count));
-  };
 
   return (
     <div className="App">
@@ -24,12 +20,7 @@ function App(props) {
         >
           Learn React
         </a>
-          <div>
-            <button onClick={handleClick}>
-              Hello world!
-            </button>
-            &nbsp;number: {count}
-          </div>
+          <Number {...props}></Number>
       </header>
     </div>
   );
