@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  const handleClick = () =>  {
+    return setCount(count +1);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,10 +25,10 @@ function App() {
           Learn React
         </a>
           <div>
-            <button onClick={() => alert("now you know how to handle onclick event")}>
+            <button onClick={handleClick}>
               Hello world!
             </button>
-            &nbsp;number: 0
+            &nbsp;number: {count}
           </div>
       </header>
     </div>
