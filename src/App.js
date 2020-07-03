@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Counter from "./components/Counter";
+import CounterGroup from "./components/CounterGroup";
 
 class App extends React.Component {
 
@@ -21,7 +21,7 @@ class App extends React.Component {
                     >
                         Learn React
                     </a>
-                    <Counter/>
+                    <CounterGroup numberOfCounter={3}/>
                 </header>
             </div>
         );

@@ -10,11 +10,13 @@ class Counter extends React.Component {
     }
 
     plus = () =>  {
-        return this.setState({count: this.state.count + 1});
+        this.props.addTotalNumber();
+        this.setState({count: this.state.count + 1});
     };
 
     minus = () =>  {
-        return this.setState({count: this.state.count - 1});
+        this.props.minusTotalNumber();
+        this.setState({count: this.state.count - 1});
     };
 
     render() {
